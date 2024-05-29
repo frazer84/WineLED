@@ -1,0 +1,44 @@
+{
+  "name": "wineled",
+  "version": "1.0.0",
+  "description": "Node.js server to control WS2812B addressable LEDs and have them show the position and status of the wines in my wine-cellar.",
+  "main": "build/src/index.js",
+  "scripts": {
+    "start": "tsc && node build/src/index.js",
+    "dev": "tsc-watch --onSuccess \"node .\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frazer84/WineLED.git"
+  },
+  "author": "Daniel Zarins (frazer84)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frazer84/WineLED/issues"
+  },
+  "homepage": "https://github.com/frazer84/WineLED#readme",
+  "devDependencies": {
+    "@types/lowdb": "^1.0.11",
+    "@types/node": "^14.18.33",
+    "@types/node-cron": "^3.0.6",
+    "@types/node-fetch": "^2.6.2",
+    "gts": "^3.1.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "csv": "^6.2.3",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.0",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.7",
+    "wled": "^1.1.0"
+  }
+}

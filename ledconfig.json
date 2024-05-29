@@ -1,0 +1,13 @@
+{
+  "rows": [
+    {
+      "start": 54,
+      "bottleOffset": 3,
+      "bottleWidth": 3,
+      "end": 0,
+      "extraOffset": 0,
+      "extraOffsetIndex": 30,
+      "invert": true
+    }
+  ]
+}
